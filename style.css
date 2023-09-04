@@ -1,0 +1,158 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px 60px 0 0;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.user-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin: 0 40px 0 1400px;
+  gap: 26px;
+}
+
+.user-menu li {
+  margin-right: 20px;
+}
+.user-menu a img{
+  height: 20px; /* Adjust the height of the icons */
+  width: auto; /* Maintain aspect ratio */
+}
+nav a {
+  text-decoration: none;
+  color: #bc3131;
+  padding: 10px;
+  
+}
+nav  ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+main {
+  padding: 20px;
+}
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px -10px; /* Отрицательный margin для компенсации внутренних margin у .product */
+}
+
+.product {
+  width: calc(25% - 20px); /* Рассчитываем ширину для 4 продуктов в ряду, вычитая отступы */
+  margin: 10px; /* Внутренний отступ между продуктами */
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+ /*proguct menu*/
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  width: calc(33.33% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+  border-radius: 10px; 
+  overflow: hidden;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.6s ease-in-out; /* Добавляем  эффект плавного увеличения */
+  border-radius: 10px;
+}
+.product-card:hover img { 
+  transform: scale(1.1);   /* Увеличиваем изображение */
+}
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product-card p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ff6600;
+  font-weight: bold;
+  position: relative;
+}
+
+.old-price {
+  color: #999; /* Цвет перечеркнутой цены */
+  text-decoration: line-through;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+}                                   
